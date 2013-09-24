@@ -3,5 +3,5 @@
 
 int Fib::get_fib(int n)
 {
-return 1;
+	return 1;
 }
