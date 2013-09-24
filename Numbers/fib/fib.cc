@@ -1,7 +1,8 @@
 //fib.cc
+
 #include "fib.h"
 
-int Fib::get_fib(int n)
+public int fib::get_fib(int n)
 {
 return 1;
 }
