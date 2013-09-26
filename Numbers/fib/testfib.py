@@ -1,13 +1,18 @@
 #! /usr/bin/python3
 #testfib.py
 
-import sys
-import fib
+import unittest
+from fib import fib
 
+class TestFib(unittest.TestCase):
+    def test_fib_0(self):
+        self.assertEqual(fib(0), 0)
 
+    def test_fib_1(self):
+        self.assertEqual(fib(1), 1)
 
-def main():
-   self.assertEqual(0,fib(0)
+    def test_fib_2(self):
+        self.assertEqual(fib(2), 1)
 
 if __name__ == "__main__":
-        main()
+       unittest.main()
