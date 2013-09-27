@@ -7,7 +7,7 @@ python:
 
 # command to install dependencies
 install: python install.py 
-script: nosetests -w */*/ 
+script: sh test.sh 
 branches:
   only:
     - python
