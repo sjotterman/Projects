@@ -15,7 +15,7 @@ class TestFib(unittest.TestCase):
         self.assertEqual(fib(2), 1)
 
     def test_fib_range(self):
-        for x in range(2,30):
+        for x in range(2,13):
             self.assertEqual(fib(x), fib(x - 1) + fib(x - 2))
 
 if __name__ == "__main__":
