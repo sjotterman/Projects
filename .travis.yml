@@ -8,8 +8,8 @@ python:
   - "3.2.3"
 
 # command to install dependencies
-install: CHANGE ME
-script: CHANGE ME
+install: 
+script: 
 branches:
   only:
     - python
