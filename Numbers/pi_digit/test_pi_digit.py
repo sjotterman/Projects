@@ -23,5 +23,8 @@ class Test_pi_digit(unittest.TestCase):
 	def test_pi_digit_6(self):
 		self.assertEqual(pi_digit(6), 9)
 
+    def test_pi_digit_15(self):
+        self.assertEqual(pi_digit(15), 9)    
+
 if __name__ == "__main__":
    unittest.main()
