@@ -2,7 +2,7 @@
 #testfact.py
 
 import unittest
-from factorial import factorial
+from factorial import fact_recto
 
 class TestFib(unittest.TestCase):
     def test_fact_rec_0(self):
