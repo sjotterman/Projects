@@ -5,6 +5,7 @@ case "$(python --version 2>&1)" in
         nosetests3 -w Numbers
         ;;
     *)
+        pip install nosetests3
         nosetests -w Numbers
         ;;
 esac
