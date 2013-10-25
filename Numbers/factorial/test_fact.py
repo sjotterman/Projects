@@ -1,13 +1,12 @@
 #! /usr/bin/python3
 #testfact.py
-
+from __future__ import absolute_import
 import unittest
+from . import factorial
 
-from factorial import fact_rec
-
-class TestFib(unittest.TestCase):
+class TestFact(unittest.TestCase):
     def test_fact_rec_0(self):
-        self.assertEqual(fact_rec(0), 1)
+        self.assertEqual(factorial.fact_rec(0), 1)
 
 if __name__ == "__main__":
        unittest.main()
