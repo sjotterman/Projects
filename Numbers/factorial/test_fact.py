@@ -17,5 +17,8 @@ class TestFact(unittest.TestCase):
     def test_fact_rec_12(self):
         self.assertEqual(factorial.fact_rec(12), 479001600)
 
+    def test_fact_rec_neg1(self):
+        self.assertEqual(factorial.fact_rec(-1), 0)
+
 if __name__ == "__main__":
        unittest.main()
