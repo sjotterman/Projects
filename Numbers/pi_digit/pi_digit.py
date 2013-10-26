@@ -1,4 +1,4 @@
-#! /usr/bin/python3
+#! /usr/bin/python
 #pi_digit.py
 
 import sys

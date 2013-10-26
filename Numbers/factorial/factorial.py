@@ -2,5 +2,6 @@
 
 def fact_rec(n):
     if (n == 0):
-        return 1  
-    pass
+        return 1
+    if (n == 1):
+        return 1
