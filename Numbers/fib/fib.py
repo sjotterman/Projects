@@ -11,10 +11,11 @@ def fib(n):
     return fib(n -1) + fib(n - 2)
 
 def main():
-   if (len(sys.argv) == 2):
-       print(fib(sys.argv[1]))
-   else:
-       print("Usage: ", sys.argv[0], " [number]")
+  print("Fibonacci numbers. \n Please enter an integer.")
+  str_num = (raw_input())
+  i_num = int(str_num)
+  print("Fibonacci number " + str_num + " is:")
+  print(fib(i_num))
 
 if __name__ == "__main__":
         main()
