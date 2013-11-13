@@ -14,5 +14,12 @@ class Test_palindrome(unittest.TestCase):
 
     def test_is_palindrome_racecar(self):
         self.assertEqual(palindrome.is_palindrome("racecar"), True)
+
+    def test_is_palindrome_mom(self):
+        self.assertEqual(palindrome.is_palindrome("mom"), True)
+
+    def test_is_palindrome_beer(self):
+        self.assertEqual(palindrome.is_palindrome("beer"), False)
+
 if __name__ == "__main__":
        unittest.main()
