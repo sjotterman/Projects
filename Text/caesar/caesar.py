@@ -4,6 +4,8 @@
 import sys
 
 def shift(str_input, key):
+    # ensure large keys just wrap around the alphabet
+    key = key % 26
     c_init_char = str_input
     i_init_char = ord(str_input)
     

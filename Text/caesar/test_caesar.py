@@ -63,5 +63,10 @@ class Test_caesar(unittest.TestCase):
     def test_shift_Z_25(self):
         self.assertEqual(caesar.shift("Z", 25), "Y")
 
+    def test_shift_a_52(self):
+        self.assertEqual(caesar.shift("a", 52), "a")
+
+    def test_shift_A_52(self):
+        self.assertEqual(caesar.shift("A", 52), "A")
 if __name__ == "__main__":
        unittest.main()
