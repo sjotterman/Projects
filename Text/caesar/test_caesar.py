@@ -10,7 +10,58 @@ class Test_caesar(unittest.TestCase):
         self.assertEqual(caesar.shift("a", 1), "b")
 
     def test_shift_b_1(self):
-        self.assertEqual(caesar.shift("b", 2), "c")
+        self.assertEqual(caesar.shift("b", 1), "c")
+
+    def test_shift_c_1(self):
+        self.assertEqual(caesar.shift("c", 1), "d")
+
+    def test_shift_d_1(self):
+        self.assertEqual(caesar.shift("d", 1), "e")
+
+    def test_shift_A_1(self):
+        self.assertEqual(caesar.shift("A", 1), "B")
+
+    def test_shift_d_1(self):
+        self.assertEqual(caesar.shift("d", 1), "e")
+    
+    def test_shift_z_1(self):
+        self.assertEqual(caesar.shift("z", 1), "a")
+    
+    def test_shift_Z_1(self):
+        self.assertEqual(caesar.shift("Z", 1), "A")
+
+    def test_shift_a_1(self):
+        self.assertEqual(caesar.shift("a", 2), "c")
+
+    def test_shift_b_1(self):
+        self.assertEqual(caesar.shift("b", 2), "d")
+
+    def test_shift_c_1(self):
+        self.assertEqual(caesar.shift("c", 2), "e")
+
+    def test_shift_d_1(self):
+        self.assertEqual(caesar.shift("d", 2), "f")
+
+    def test_shift_A_1(self):
+        self.assertEqual(caesar.shift("A", 2), "C")
+
+    def test_shift_d_1(self):
+        self.assertEqual(caesar.shift("d", 2), "f")
+    
+    def test_shift_z_1(self):
+        self.assertEqual(caesar.shift("z", 2), "b")
+    
+    def test_shift_Z_1(self):
+        self.assertEqual(caesar.shift("Z", 2), "B")
+
+    def test_shift_a_5(self):
+        self.assertEqual(caesar.shift("a", 5), "f")
+
+    def test_shift_G_10(self):
+        self.assertEqual(caesar.shift("G", 10), "Q")
+
+    def test_shift_Z_25(self):
+        self.assertEqual(caesar.shift("Z", 25), "Y")
 
 if __name__ == "__main__":
        unittest.main()
