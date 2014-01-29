@@ -23,10 +23,10 @@ class Test_caesar(unittest.TestCase):
 
     def test_shift_d_1(self):
         self.assertEqual(caesar.shift("d", 1), "e")
-    
+
     def test_shift_z_1(self):
         self.assertEqual(caesar.shift("z", 1), "a")
-    
+
     def test_shift_Z_1(self):
         self.assertEqual(caesar.shift("Z", 1), "A")
 
@@ -47,10 +47,10 @@ class Test_caesar(unittest.TestCase):
 
     def test_shift_d_1(self):
         self.assertEqual(caesar.shift("d", 2), "f")
-    
+
     def test_shift_z_1(self):
         self.assertEqual(caesar.shift("z", 2), "b")
-    
+
     def test_shift_Z_1(self):
         self.assertEqual(caesar.shift("Z", 2), "B")
 
@@ -68,5 +68,12 @@ class Test_caesar(unittest.TestCase):
 
     def test_shift_A_52(self):
         self.assertEqual(caesar.shift("A", 52), "A")
+
+    def test_shift_HAL_1(self):
+        self.assertEqual(caesar.shift("HAL", 1),"IBM")
+
+    def test_shift_Sam_1(self):
+        self.assertEqual(caesar.shift("Sam", 1),"Tbn")
+
 if __name__ == "__main__":
        unittest.main()
