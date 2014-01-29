@@ -23,7 +23,6 @@ def shift(str_input, key):
         if i_new_char > 122:
           i_new_char -= 26
       c_new_char = chr(i_new_char)
-      print(c_new_char)
       out_str += c_new_char
 
     return out_str
