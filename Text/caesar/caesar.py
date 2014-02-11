@@ -4,6 +4,10 @@
 import sys
 
 def shift(str_input, key):
+
+    if (isinstance(key, float)):
+      key = int(key)
+
     # ensure large keys just wrap around the alphabet
     key = key % 26
     out_str = ''
