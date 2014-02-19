@@ -93,5 +93,11 @@ class Test_caesar(unittest.TestCase):
     def test_shift_Sam_string1(self):
         self.assertEqual(caesar.shift("Sam", "1"),"Tbn")
 
+    def test_shift_hello_world(self):
+        self.assertEqual(caesar.shift("Hello, World!", "1"),"Ifmmp, Xpsme!")
+
+    def test_shift_punctuation(self):
+        self.assertEqual(caesar.shift("!@#$%^&*()", "1"),"!@#$%^&*()")
+
 if __name__ == "__main__":
        unittest.main()
