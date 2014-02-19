@@ -90,5 +90,8 @@ class Test_caesar(unittest.TestCase):
     def test_shift_a_1point3(self):
         self.assertEqual(caesar.shift("a", 1.3), "b")
 
+    def test_shift_Sam_string1(self):
+        self.assertEqual(caesar.shift("Sam", "1"),"Tbn")
+
 if __name__ == "__main__":
        unittest.main()

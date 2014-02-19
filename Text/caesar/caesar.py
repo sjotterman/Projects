@@ -5,8 +5,8 @@ import sys
 
 def shift(str_input, key):
 
-    if (isinstance(key, float)):
-      key = int(key)
+    ##if (isinstance(key, float)):
+    key = int(key)
 
     # ensure large keys just wrap around the alphabet
     key = key % 26
@@ -34,4 +34,7 @@ def shift(str_input, key):
 if __name__ == "__main__":
     print("Please enter text")
     user_input = raw_input()
-    print("This doesnt't actually do anything yet.")
+    print("Please enter a number")
+    shift_num = raw_input()
+    print("Your text shifted " + shift_num + " spaces is: ")
+    print(shift(user_input, shift_num))
