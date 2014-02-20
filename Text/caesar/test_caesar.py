@@ -99,5 +99,8 @@ class Test_caesar(unittest.TestCase):
     def test_shift_punctuation(self):
         self.assertEqual(caesar.shift("!@#$%^&*()", "1"),"!@#$%^&*()")
 
+    def test_shift_numbers(self):
+        self.assertEqual(caesar.shift("123", "1"),"123")
+
 if __name__ == "__main__":
        unittest.main()

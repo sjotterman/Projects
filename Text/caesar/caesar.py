@@ -19,7 +19,7 @@ def shift(str_input, key):
         i_new_char = i_init_char + key
         if i_new_char > 90:
           i_new_char -= 26
-        c_new_char = chr(i_new_char)        
+        c_new_char = chr(i_new_char)
       # lower case letter
       elif (str.islower(c_init_char)):
         i_new_char = i_init_char + key
