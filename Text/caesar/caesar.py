@@ -5,7 +5,11 @@ import sys
 
 def shift(str_input, key):
 
-    key = int(key)
+    try:
+        key = int(key)
+    except ValueError:
+        print("Error: \"" + key + "\" is not a valid key.");
+        return None
 
     # ensure large keys just wrap around the alphabet
     key = key % 26

@@ -102,5 +102,8 @@ class Test_caesar(unittest.TestCase):
     def test_shift_numbers(self):
         self.assertEqual(caesar.shift("123", "1"),"123")
 
+    def test_shift_letters_key(self):
+        self.assertEqual(caesar.shift("A", "Al1K"), None)
+
 if __name__ == "__main__":
        unittest.main()
