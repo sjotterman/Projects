@@ -1,4 +1,6 @@
 # word_count.py
 
 def my_count(str_input):
-    return 0
+    if len(str_input) == 0:
+        return 0
+    return 1

@@ -8,5 +8,9 @@ class Test_word_count(unittest.TestCase):
     def test_empty_string(self):
         self.assertEqual(word_count.my_count(""), 0)
         
+    def test_hello(self):
+        self.assertEqual(word_count.my_count("hello"), 1)
+        
 if __name__ == "__main__":
     unittest.main()
+    
