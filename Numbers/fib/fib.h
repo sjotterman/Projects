@@ -7,7 +7,7 @@ class Fib
 {
 
 public:
-	int get_fib(int n);
+	static int get_fib(int n);
 
 };
 
