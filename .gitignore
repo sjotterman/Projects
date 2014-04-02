@@ -37,3 +37,8 @@ nosetests.xml
 # Komodo
 .komodotools/
 *.komodoproject
+
+# tests
+test/*
+!test/*.cpp
+!test/CMakeLists.txt
