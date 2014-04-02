@@ -4,4 +4,4 @@ branches:
     - cpp
 before_install: sh gtest_setup.sh
 install: TRUE
-script:
+script: pwd
