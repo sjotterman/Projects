@@ -2,3 +2,4 @@ language: cpp
 branches:
   only:
     - cpp
+before_install: sh gtest_setup.sh
