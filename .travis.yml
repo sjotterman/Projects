@@ -3,4 +3,5 @@ branches:
   only:
     - cpp
 before_install: sh gtest_setup.sh
+script:
 install:
