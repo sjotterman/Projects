@@ -3,5 +3,7 @@ branches:
   only:
     - cpp
 before_install: sh gtest_setup.sh
+  - sudo apt-get update
+  - sudo apt-get install libgtest-dev
 install: TRUE
-script: pwd
+script: sh .travis-build.sh
