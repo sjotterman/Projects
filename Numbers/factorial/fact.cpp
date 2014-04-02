@@ -3,5 +3,11 @@
 
 int Fact::get_fact(int n)
 {
-  return 1;
+  if (n < 2){ return 1;}
+  int total = n;
+  for(int i = n; i > 2; --i)
+  {
+    total *= i - 1;
+  }
+  return total;
 }
