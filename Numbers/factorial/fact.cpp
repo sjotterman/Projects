@@ -1,5 +1,5 @@
 // fact.cpp
-
+#include "fact.h"
 
 int Fact::get_fact(int n)
 {
