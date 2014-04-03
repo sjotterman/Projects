@@ -45,6 +45,6 @@ nosetests.xml
 *.obj
 
 # tests
-test/*
+test/
 !test/*.cpp
 !test/CMakeLists.txt
