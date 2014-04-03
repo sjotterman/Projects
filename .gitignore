@@ -38,6 +38,12 @@ nosetests.xml
 .komodotools/
 *.komodoproject
 
+# c++ compiled objects
+*.slo
+*.lo
+*.o
+*.obj
+
 # tests
 test/*
 !test/*.cpp
